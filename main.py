@@ -58,7 +58,7 @@ class FoundEnemy(Exception):
 class Config:
 
     base = {
-        'Grabzone'  : 5,
+        'Grabzone'  : 1,
         'IsHoldKey' : False,
         'HoldKey'   : 'shift',
         'ToggleKey' : 'F6'
@@ -143,7 +143,7 @@ class TriggerBot:
             elif self._mode == 1: sleep(0.25)
             elif self._mode == 2: sleep(0.2)
             elif self._mode == 3: sleep(0.15)
-            elif self._mode == 4: sleep(0.1)
+            elif self._mode == 4: sleep(0.0005)
             elif self._mode == 5: pass
 
 
@@ -205,4 +205,4 @@ if __name__ == "__main__":
                 bot.scan(), print_banner(bot)
                 continue
 
-        sleep(0.0025)
+        sleep(0.00025)
